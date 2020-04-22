@@ -1,0 +1,41 @@
+/// <reference types="node" />
+export declare class Post {
+    id: number;
+    name: string;
+    bit: boolean;
+    int: number;
+    tinyint: number;
+    boolean: boolean;
+    smallint: number;
+    mediumint: number;
+    bigint: string;
+    float: number;
+    double: number;
+    decimal: string;
+    date: string;
+    datetime: Date;
+    timestamp: Date;
+    time: string;
+    year: number;
+    char: string;
+    varchar: string;
+    blob: Buffer;
+    text: string;
+    tinyblob: Buffer;
+    tinytext: string;
+    mediumblob: Buffer;
+    mediumtext: string;
+    longblob: Buffer;
+    longtext: string;
+    enum: "A" | "B" | "C";
+    binary: Buffer;
+    geometry: string;
+    point: string;
+    linestring: string;
+    polygon: string;
+    multipoint: string;
+    multilinestring: string;
+    multipolygon: string;
+    geometrycollection: string;
+    roles: ("A" | "B" | "C")[];
+}

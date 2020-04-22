@@ -1,0 +1,13 @@
+import * as ts from "typescript";
+import IGenerationOptions from "../../src/IGenerationOptions";
+import IConnectionOptions from "../../src/IConnectionOptions";
+export declare function getGenerationOptions(resultsPath: string): IGenerationOptions;
+export declare function createMSSQLModels(filesOrgPath: string): Promise<IConnectionOptions>;
+export declare function createPostgresModels(filesOrgPath: string): Promise<IConnectionOptions>;
+export declare function createSQLiteModels(filesOrgPath: string): Promise<IConnectionOptions>;
+export declare function createMysqlModels(filesOrgPath: string): Promise<IConnectionOptions>;
+export declare function createMariaDBModels(filesOrgPath: string): Promise<IConnectionOptions>;
+export declare function createOracleDBModels(filesOrgPath: string): Promise<IConnectionOptions>;
+export declare function compileTsFiles(fileNames: string[], options: ts.CompilerOptions): boolean;
+export declare function getEnabledDbDrivers(): string[];
+export declare function createModelsInDb(dbDriver: string, filesOrgPathJS: string): Promise<IConnectionOptions>;
